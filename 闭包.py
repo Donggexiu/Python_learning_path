@@ -1,4 +1,4 @@
-#!/usr/bin/env/python
+#!/usr/bin/env/python_SQLAlchemy
 # _*_coding:utf-8_*_
 # @Time : 2018/11/9 9:21
 # @Author : 小仙女
@@ -84,3 +84,18 @@ if __name__ == '__main__':
     print(a(3))
     print(a(1))
     '''下面让我们来了解一下闭包的包到底长什么样子。其实闭包函数相对与普通函数会多出一个__closure__的属性，里面定义了一个元组用于存放所有的cell对象，每个cell对象一一保存了这个闭包中所有的外部变量。'''
+#写函数，计算传入的字符串中数字，字母，空格，以及其他的个数
+def func(s):
+    num = 0
+    space_num = 0
+    digit_num = 0
+    others = 0
+    for i in s:
+        if i.isdigit():
+            digit_num +=1
+        elif i.isspace():
+            space_num +=1
+        elif i.isalh:
+            pass
+
+

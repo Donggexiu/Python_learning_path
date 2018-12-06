@@ -1,4 +1,4 @@
-#!/usr/bin/env/python
+#!/usr/bin/env/python_SQLAlchemy
 # _*_coding:utf-8_*_
 # @Time : 2018/11/9 15:15
 # @Author : 小仙女
@@ -14,7 +14,7 @@ print(isinstance({},Iterable))
 print(isinstance((),Iterable))
 print(isinstance(1,Iterable))
 #python中列表,元祖,字符串,字典都是可迭代对象,而整型数据不是可迭代对象
-#可迭代对象的内部必须实现一个方法,__iter__()方法,这个方法的功能是,返回一个迭代器,这个迭代器是帮助自己进行迭代的.实现这个方法的对象,python就人为它是可迭代对象.
+#可迭代对象的内部必须实现一个方法,__iter__()方法,这个方法的功能是,返回一个迭代器,这个迭代器是帮助自己进行迭代的.实现这个方法的对象,python就人为它是可迭代对象.调用了他们内部的__iter__方法，把他们变成了迭代器
 #我们自己创建一个类,里面实现iter方法 python就人为它的对象是可迭代对象了
 class MyIterableObj(object):
     def __iter__(self):
